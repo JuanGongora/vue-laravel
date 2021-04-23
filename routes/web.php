@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+// using a prefix to the route for checking if it's an api call, and setting as a fallback route if so
+Route::get('/{any?}', function () {
     return view('welcome');
-});
+})->where('any', '^(?!api\/)[\/\w\.\,-]*');
