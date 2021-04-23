@@ -5,9 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel Bed n' Breakfast</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- defer is to wait until the script is fully loaded -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
-    // for calling the vue app
+    <!-- for calling the vue app -->
     <div id="app"></div>
     </body>
 </html>
